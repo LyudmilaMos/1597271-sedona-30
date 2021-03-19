@@ -61,9 +61,34 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="rate">
-                  <legend>Стоимость в сутки(р.)</legend>
-                  <!-- Здесь будет форма-->
+                <fieldset class="filter-item">
+                  <legend>Стоимость в сутки (р):</legend>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      <input type="number" name="max-price" value="3000">
+                    </label>
+                  </div>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="
+                        width: 30%;
+                        margin-left: 20%
+                      "></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0" style="
+                      left: 80%"></div>
+                      <div class="toggle toggle-max" tabindex="0" tyle="
+                      left: 20%
+                    "></div>
+                    </div>
+
+                  </div>
+                  </div>
+                  <button class="button-filter" type="button">Показать</button>
                 </fieldset>
               </form>
             </section>
@@ -75,6 +100,30 @@
             <li class="breadcrumbs-item">по типу</li>
             <li class="breadcrumbs-item">по рейтингу</li>
           </ul>
+          <span aria-label="Up" class="icon-up-dir">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+            <path d="M10.5 2L5 12H16L10.5 2Z" fill="#CACACA"/>
+            <path d="M10.5 2L5 12H16L10.5 2Z" stroke="black"/>
+            </g>
+            <defs>
+            <filter id="filter0_d" x="0.154297" y="0.962494" width="20.6913" height="19.5375" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            </defs>
+            </svg>
+          </span>
+          <span aria-label="Down" class="icon-down-dir">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+              </svg>
+          </span>
         </section>
         <section class="choice">
           <ul>
@@ -169,12 +218,12 @@
         </section>
         <section  class="website">
           <!--<h3>Правобладатель</h3>/*Скрытый заголовок-->
-          <p>
+          <s>
             Website by:
             <a class="button-website" href="https://htmlacademy.ru">
             <img src="img/logo/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
             <!--HTML Academy--></a>
-          </p>
+          </s>
         </section>
       </footer>
     </body>
